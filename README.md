@@ -1,5 +1,7 @@
 # Tentacle
 
+![Tentacle](https://raw.githubusercontent.com/gargum/4x12-Tentacle/refs/heads/main/pic/Tentacle_Board.jpg "This is the world's first SquidHID device!")
+
 The **Tentacle** is the first device to use the SquidHID firmware! It is a 4x12 keyboard utilising a Japanese duplex matrix.
 
 ## Features
@@ -109,3 +111,19 @@ void loop() {
 
 }
  ```
+
+## Power Circuit
+
+The Tentacle uses a TP4056 alongside 3x2N7002 transistors, a 10k resistor, and an SPDT to toggle between charging and discharging.
+
+The common pin on the SPDT switch is connected to the 5V/VIN pin on the microcontroller. The two other pins are connected to I+ and O+ respectively on the TP4056 module.
+
+When I+ and 5V are connected via the switch, I+ triggers two transistors. The first on connects I- the GND on the microcontroller, while the second transistor connects a pull-up to GND, which in turn prevents O- from being connected to GND.
+
+When O+ and 5V are connected via the switch, the pull-up is able to do its job, which is to trigger the third transistor, allowing O- to connect to GND.
+
+With this arrangement, one switch toggles between two more complex states - O+ to 5V + O- to GND, and I+ to 5V + I- to GND. This ensures both convenience, and safety.
+
+Below is a crude diagram of the wiring for this setup:
+
+![TP4056 Power Circuit](https://raw.githubusercontent.com/gargum/4x12-Tentacle/refs/heads/main/pic/Power_Schematic.jpg "In complete seriousness, yes, yes I do do all my schematics on literal paper. Fight me")
