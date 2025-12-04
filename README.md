@@ -20,7 +20,7 @@ The **Tentacle** is the first device to use the SquidHID firmware! It is a 4x12 
 
  Afterwards, simply download the SquidHID repository as a .ZIP file, and extract it into the **Arduino/libraries/** directory where NimBLE-Arduino is also stored.
 
- Next, modify the included config.h file as follows:
+ Next, for the ESP32 C3 Super Mini, modify the included config.h file as follows:
 
  ``` C++
 /**
