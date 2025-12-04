@@ -2,7 +2,7 @@
 
 ![Tentacle](https://raw.githubusercontent.com/gargum/4x12-Tentacle/refs/heads/main/pic/Tentacle_Board.jpg "This is the world's first SquidHID device!")
 
-The **Tentacle** is the first device to use the SquidHID firmware! It is a 4x12 keyboard utilising a Japanese duplex matrix.
+The **Tentacle** is the first device to use the [SquidHID](https://github.com/gargum/SQUIDHID/tree/master) firmware! It is a 4x12 keyboard utilising a Japanese duplex matrix.
 
 ## Features
 
