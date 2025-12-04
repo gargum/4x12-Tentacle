@@ -4,6 +4,8 @@
 
 The **Tentacle** is the first device to use the [SquidHID](https://github.com/gargum/SQUIDHID/tree/master) firmware! It is a 4x12 keyboard utilising a Japanese duplex matrix.
 
+This keyboard has been created in order to help with the process of porting SquidHID to as many ecosystems as possible!
+
 ## Features
 
  - [x] Simultaneous Choc and MX switch support
@@ -51,7 +53,7 @@ The **Tentacle** is the first device to use the [SquidHID](https://github.com/ga
 #define SCL_PIN           9
  ```
 
- At this point, you should be able to use this sketch to flash your keyboard:
+ At this point, you should be able to use the following sketch to flash your ESP32-C3 Super Mini keyboard:
 
  ``` C++
 /**
@@ -111,6 +113,8 @@ void loop() {
 
 }
  ```
+
+Variants of the firmware for the other compatible microcontrollers will be added as they are built and tested! Check the **Sketches** directory to see which versions have been fully tested and implemented!
 
 ## Power Circuit
 
