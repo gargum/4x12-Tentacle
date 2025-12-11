@@ -11,10 +11,10 @@
 #define MOUSE_ENABLE      true
 #define DIGITIZER_ENABLE  true
 #define GAMEPAD_ENABLE    true
-#define SPACEMOUSE_ENABLE false  // Please note that if the Spacemouse is turned on, the Mouse, Digitizer and Gamepad must be turned off. 
+#define SPACEMOUSE_ENABLE false
 
 #define LED_ENABLE        true  
-#define LED_PIN           5     // The Tentacle's string of SK6812 MINI E LEDs are using Pin 20 on the ESP32 C3 Super Mini as the Data pin.
+#define LED_PIN           5     // The Tentacle's string of SK6812 MINI E LEDs are using Pin 5 on the ESP32 S3 Super Mini as the Data pin.
 #define LED_COUNT         48    // The Tentacle uses a string of 48 NeoPixel LEDs in total.
 
 #define OLED_ENABLE       true  // The OLED connected the Tentacle is 64 pixels tall and 128 pixels wide.
